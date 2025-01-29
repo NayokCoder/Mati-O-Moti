@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 max-w-[1920px]">
+    <!-- Navbar -->
+    <header class="bg-red-600 text-white p-4">
+      <div class="max-w-7xl container mx-auto flex justify-between">
+        <nav>
+          <ul class="flex space-x-4">
+            <li><img class="w-6 h-6" src="Resource/Menu_Icon.png" alt="menu_icon" /></li>
+            <li>
+              <div class="flex gap-1">
+                <img class="w-6 h-6" src="Resource/icons8-world-24.png" alt="menu_icon" />
+                <a href="#" class="hover:underline">Bangla</a>
+                <img class="w-6 h-6" src="Resource/icons8-down-arrow-24.png" alt="menu_icon" />
+              </div>
+            </li>
+            <li><a href="#" class="hover:underline">Newsletter</a></li>
+            <li><a href="#" class="hover:underline">Watchlist</a></li>
+          </ul>
+        </nav>
+        <div class="w-40 h-9">
+          <h1 class="h-4 font-bold text-center">MATE OR MOTE</h1>
+          <h1 class="text-xs text-center">সবার আগে দেশ</h1>
+        </div>
+
+        <nav>
+          <ul class="flex space-x-4">
+            <div class="flex gap-3">
+              <li><img class="w-6 h-6" src="Resource/icons8-search-50.png" alt="menu_icon" /></li>
+              <li><a href="#" class="hover:underline">Search</a></li>
+            </div>
+            <div class="flex gap-3">
+              <li><img class="w-6 h-6" src="Resource/icons8-account-32 (1).png" alt="menu_icon" /></li>
+              <li><a href="#" class="hover:underline">Account</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto my-6 p-4 bg-white shadow-md">
+      <h2 class="text-2xl font-bold">Bangladesh’s interim govt struggles...</h2>
+      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="mt-2 bg-red-600 text-white px-4 py-2">Read More</button>
+    </section>
+
+    <!-- Advertisement -->
+    <section class="container mx-auto my-4 text-center">
+      <div class="bg-gray-300 py-4">You can place ads here (750x100)</div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+      <div class="bg-white shadow-md p-4">
+        <h3 class="text-lg font-bold">Politics</h3>
+        <p class="text-gray-700">Bangladesh’s interim government led by Yunus...</p>
+      </div>
+      <div class="bg-white shadow-md p-4">
+        <h3 class="text-lg font-bold">World News</h3>
+        <p class="text-gray-700">Canada’s inflation rate fell to 1.9%...</p>
+      </div>
+      <div class="bg-white shadow-md p-4">
+        <h3 class="text-lg font-bold">Economy</h3>
+        <p class="text-gray-700">Stock market sees record high...</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center mt-6">&copy; 2025 MATE OR MOTE. All Rights Reserved.</footer>
+  </body>
+</html>
