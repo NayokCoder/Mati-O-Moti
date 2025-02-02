@@ -3,3 +3,65 @@
 body {
   font-family: "Inter", serif;
 }
+
+.footer {
+  background-color: rgba(42, 42, 42, 1);
+}
+
+/* category slide */
+/* Hide scrollbar but keep scrolling functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Smooth scrolling and snapping */
+#navScroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+/* Hover effect for links */
+.nav-link {
+  position: relative;
+  padding-bottom: 3px;
+  transition: font-weight 0.3s ease-in-out;
+  white-space: nowrap;
+}
+.nav-link:hover {
+  font-weight: 600;
+}
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #f87171;
+}
+/* Hide scrollbar but keep scrolling functional */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Marqueee */
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+.hover\:pause-marquee:hover {
+  animation-play-state: paused;
+}

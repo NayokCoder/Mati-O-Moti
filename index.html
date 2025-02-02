@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="styel.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-50 min-w-[1920px]">
+  <body class="bg-gray-50 w-full">
     <!-- Navbar -->
     <header class="bg-red-600 text-white p-4">
       <div class="max-w-7xl container mx-auto flex justify-between">
         <nav>
           <ul class="flex space-x-4">
-            <li><img class="w-6 h-6" src="Resource/Menu_Icon.png" alt="menu_icon" /></li>
+            <li>
+              <img class="w-6 h-6" src="Resource/Menu_Icon.png" alt="menu_icon" />
+            </li>
             <li>
               <div class="flex gap-1">
                 <img class="w-6 h-6" src="Resource/icons8-world-24.png" alt="menu_icon" />
@@ -27,8 +29,7 @@
           </ul>
         </nav>
         <div class="w-40 h-9">
-          <h1 class="h-4 font-bold text-center">MATE OR MOTE</h1>
-          <h1 class="text-xs text-center">সবার আগে দেশ</h1>
+          <img src="Resource/Logo.png" alt="Mati O Moti" />
         </div>
 
         <nav>
@@ -47,23 +48,42 @@
     </header>
 
     <!-- Category  -->
-    <section class="text-center border-y">
-      <div class="container mx-auto max-w-7xl py-4 flex justify-between">
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300"> Home </a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Business</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Opinion</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">World</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Economy</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Technology</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Environment</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Climate Change</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Health Fitness</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Entertainment</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Religion</a>
-        <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Sports</a>
-        <div class="flex">
-          <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Others</a>
-          <img class="w-6 h-6" src="Resource/icons8-down-arrow-24.png" alt="downArrow" />
+    <section class="text-center border-y relative">
+      <div class="container mx-auto max-w-7xl py-4 flex items-center">
+        <!-- Scrollable Navigation -->
+        <div id="navScroll" class="flex-1 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+          <div class="inline-flex whitespace-nowrap gap-4 px-0">
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Home</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Business</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Opinion</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">World</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Economy</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Technology</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Environment</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Climate Change</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Health Fitness</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Entertainment</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Religion</a>
+            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Sports</a>
+            <div class="flex items-center">
+              <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Others</a>
+              <img class="w-6 h-6 ml-1" src="Resource/icons8-down-arrow-24.png" alt="downArrow" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-red-100 text-gray-800 overflow-hidden max-w-7xl mx-auto rounded-sm mt-4">
+      <div class="flex items-center gap-4">
+        <span class="bg-white text-red-600 px-3 py-1 text-sm font-bold uppercase">Breaking News</span>
+        <div class="w-full overflow-hidden relative">
+          <div class="flex whitespace-nowrap animate-marquee hover:pause-marquee">
+            <p class="mx-8">🚨 Stock Market Hits Record Highs!</p>
+            <p class="mx-8">⚽ Manchester United Wins Champions League!</p>
+            <p class="mx-8">🌎 Climate Change Summit Concludes With Major Agreements!</p>
+            <p class="mx-8">📉 Bitcoin Drops Below $30,000!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -195,30 +215,58 @@
       </div>
     </section>
 
-    <div class="container mx-auto p-4 max-w-7xl mt-10">
+    <div class="container mx-auto mt-10 max-w-7xl">
       <!-- Main Section -->
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Featured Article -->
-        <div class="flex md:col-span-2 bg-white p-6 shadow-lg rounded-lg">
+        <div class="grid grid-cols-2 md:col-span-2 p-6 bg-white shadow-lg rounded-lg">
           <div class="">
             <h2 class="text-gray-500 text-sm font-semibold">Opinion</h2>
-            <h1 class="text-2xl md:text-3xl font-bold mt-2">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h1>
-            <p class="text-gray-600 mt-3 text-sm">DHAKA, Bangladesh (AP) — Bangladesh’s interim government led by Nobel laureate Muhammad Yunus on Wednesday lifted a ban on the Islamist Jamaat-e-Islami party...</p>
+            <h1 class="text-2xl md:text-3xl font-bold mt-2 underline w-11/12">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h1>
+            <p class="text-gray-600 mt-3 text-sm w-11/12">DHAKA, Bangladesh (AP) — Bangladesh’s interim government led by Nobel laureate Muhammad Yunus on Wednesday lifted a ban on the Islamist Jamaat-e-Islami party...</p>
           </div>
-          <img src="Resource/image.png" alt="Featured Image" class="mt-4 w-full rounded-lg" />
+          <div class=""><img src="Resource/image.png" alt="Featured Image" class="mt-4 w-96 h-80 rounded-lg object-cover" /></div>
+          <div class="mt-6">
+            <div class="p-2">
+              <div class="flex gap-4">
+                <img class="w-32 h-24 rounded-sm" src="Resource/Rectangle 39.png" alt="" />
+                <p class="underline items-center mt-2 font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="flex gap-4">
+                <img class="w-32 h-24 rounded-sm" src="Resource/image (1).png" alt="" />
+                <p class="underline items-center mt-2 font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <div class="p-2">
+              <div class="flex gap-4">
+                <img class="w-32 h-24 rounded-sm" src="Resource/image (2).png" alt="" />
+                <p class="underline items-center mt-2 font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="flex gap-4">
+                <img class="w-32 h-24 rounded-sm" src="Resource/image (3).png" alt="" />
+                <p class="underline items-center mt-2 font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Sidebar -->
         <div class="bg-white p-6 shadow-lg rounded-lg">
           <h2 class="text-gray-500 text-sm font-semibold">Politics</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
-          <h3 class="text-lg font-semibold mt-2">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h3>
+          <h3 class="text-lg font-semibold mt-2 underline">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h3>
           <p class="text-gray-600 text-sm mt-2">DHAKA, Bangladesh (AP) — Bangladesh’s interim government...</p>
 
-          <h3 class="text-lg font-semibold mt-4">Canada’s inflation rate fell to 1.9% in November</h3>
+          <h3 class="text-lg font-semibold mt-4 underline">Canada’s inflation rate fell to 1.9% in November</h3>
           <p class="text-gray-600 text-sm mt-2">DHAKA, Bangladesh (AP) — Bangladesh’s interim government...</p>
 
-          <h3 class="text-lg font-semibold mt-4">Canada’s inflation rate fell to 1.9% in November</h3>
+          <h3 class="text-lg font-semibold mt-4 underline">Canada’s inflation rate fell to 1.9% in November</h3>
           <p class="text-gray-600 text-sm mt-2">DHAKA, Bangladesh (AP) — Bangladesh’s interim government...</p>
         </div>
       </div>
@@ -229,41 +277,41 @@
           <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions...</p>
+          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
         </div>
 
         <div class="bg-white p-4 shadow-lg rounded-lg">
           <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions...</p>
+          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
         </div>
 
         <div class="bg-white p-4 shadow-lg rounded-lg">
           <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions...</p>
+          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
         </div>
 
         <div class="bg-white p-4 shadow-lg rounded-lg">
           <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions...</p>
+          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
         </div>
       </div>
     </div>
 
     <!-- Hero Section -->
-    <section class="container mx-auto my-6 p-4 bg-white shadow-md">
+    <section class="container mx-auto my-6 p-4 bg-white shadow-md max-w-7xl">
       <h2 class="text-2xl font-bold">Bangladesh’s interim govt struggles...</h2>
       <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <button class="mt-2 bg-red-600 text-white px-4 py-2">Read More</button>
     </section>
 
     <!-- News Grid -->
-    <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+    <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl">
       <div class="bg-white shadow-md p-4">
         <h3 class="text-lg font-bold">Politics</h3>
         <p class="text-gray-700">Bangladesh’s interim government led by Yunus...</p>
@@ -278,19 +326,401 @@
       </div>
     </section>
 
+    <!-- VIDEO SECTION  -->
+
+    <div class="max-w-7xl mx-auto sm:px-6 py-8">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-gray-800">Video Gallery</h2>
+        <a href="#" class="text-blue-600 hover:underline flex items-center">See All <span class="ml-1">&rarr;</span></a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Large Video Cards -->
+        <div class="col-span-1 md:col-span-2">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden flex">
+            <!-- lg Video1 -->
+            <div class="">
+              <div class="relative w-96 h-60 rounded-lg">
+                <iframe class="p-5 w-full h-full rounded-lg" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="p-4">
+                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Technology</span>
+                <h3 class="mt-2 text-lg font-bold text-gray-900 hover:underline">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+              </div>
+            </div>
+            <!-- lg Video2 -->
+            <div class="">
+              <div class="relative w-96 h-60 rounded-lg">
+                <iframe class="p-5 w-full h-full rounded-lg" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="p-4">
+                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Technology</span>
+                <h3 class="mt-2 text-lg font-bold text-gray-900 hover:underline">The Impact of Technology on the Workplace: How Technology is Changing</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small Video Cards -->
+        <div class="space-y-4">
+          <div class="flex items-start bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="relative w-44 h-28 rounded-lg">
+              <iframe class="w-full h-full rounded-lg p-2" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-3">
+              <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Technology</span>
+              <h4 class="mt-1 text-sm font-bold text-gray-900 hover:underline">The Impact of Technology on the Workplace: How</h4>
+            </div>
+          </div>
+
+          <div class="flex items-start bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="relative w-44 h-28 rounded-lg">
+              <iframe class="w-full h-full rounded-lg p-2" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-3">
+              <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Technology</span>
+              <h4 class="mt-1 text-sm font-bold text-gray-900 hover:underline">The Impact of Technology on the Workplace: How</h4>
+            </div>
+          </div>
+
+          <div class="flex items-start bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="relative w-44 h-28 rounded-lg">
+              <iframe class="w-full h-full rounded-lg p-2" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="p-3">
+              <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Technology</span>
+              <h4 class="mt-1 text-sm font-bold text-gray-900 hover:underline">The Impact of Technology on the Workplace: How</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS PART AFTER VIDEO -->
+    <!-- News Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 max-w-7xl mx-auto">
+      <div class="bg-white p-4 shadow-lg rounded-lg">
+        <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
+        <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+        <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
+        <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
+      </div>
+
+      <div class="bg-white p-4 shadow-lg rounded-lg">
+        <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
+        <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+        <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
+        <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
+      </div>
+
+      <div class="bg-white p-4 shadow-lg rounded-lg">
+        <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
+        <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+        <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
+        <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
+      </div>
+
+      <div class="bg-white p-4 shadow-lg rounded-lg">
+        <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
+        <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+        <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
+        <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
+      </div>
+    </div>
+
+    <!-- TOP STORY PART  -->
+
+    <div class="max-w-7xl mx-auto my-10">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold">Top Stories</h2>
+        <a href="#" class="text-blue-600 font-semibold">See All →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+          <img src="Resource/image (3).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <div>
+            <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
+          </div>
+        </div>
+        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+          <img src="Resource/image 77.png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <div>
+            <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
+          </div>
+        </div>
+        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+          <img src="Resource/image (4).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <div>
+            <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
+          </div>
+        </div>
+        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+          <img src="Resource/Rectangle 38 (3).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <div>
+            <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
+          </div>
+        </div>
+        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+          <img src="Resource/Rectangle 38 (1).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <div>
+            <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
+          </div>
+        </div>
+        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+          <img src="Resource/Rectangle 38.png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <div>
+            <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Farming & Nature  -->
+
+    <section class="p-6 bg-purple-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold">Farming & Nature</h2>
+          <a href="#" class="text-blue-600 font-semibold flex items-center">See All →</a>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <div class="relative w-96 h-56 rounded-lg mb-4">
+              <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            </div>
+            <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded mt-4">Farming</span>
+            <a href="#" class="block mt-2 text-lg font-bold hover:underline">The Evolution of Farming: Embracing Technology in Agriculture</a>
+          </div>
+          <!-- Sidebar 1 content  -->
+          <div class="grid grid-cols-1 gap-4">
+            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
+              <div class="relative w-40 h-24 rounded-lg">
+                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+              </div>
+              <div>
+                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
+                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
+              </div>
+            </div>
+            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
+              <div class="relative w-40 h-24 rounded-lg">
+                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+              </div>
+              <div>
+                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
+                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
+              </div>
+            </div>
+            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
+              <div class="relative w-40 h-24 rounded-lg">
+                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+              </div>
+              <div>
+                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
+                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar 2 content  -->
+          <div class="grid grid-cols-1 gap-4">
+            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
+              <div class="relative w-40 h-24 rounded-lg">
+                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+              </div>
+              <div>
+                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
+                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
+              </div>
+            </div>
+            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
+              <div class="relative w-40 h-24 rounded-lg">
+                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+              </div>
+              <div>
+                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
+                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
+              </div>
+            </div>
+            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
+              <div class="relative w-40 h-24 rounded-lg">
+                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+              </div>
+              <div>
+                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
+                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESH GRAM -->
+
+    <section>
+      <div class="max-w-7xl mx-auto mt-10">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold">Desh gram</h2>
+          <a href="#" class="text-blue-500 hover:underline flex items-center"> See All <span class="ml-1">&rarr;</span> </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Large Featured News -->
+          <div class="md:col-span-2 shadow p-4">
+            <img src="Resource/deshgram/image.png" alt="Featured News" class="w-full h-[458px] object-cover rounded-lg" />
+            <a href="#" class="block mt-2 text-lg font-bold hover:underline">বেতন না পাওয়া ও দুর্ব্যবহারের ক্ষোভে ৭ জনকে খুন</a>
+          </div>
+
+          <!-- Small News Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white shadow rounded-lg pt-4">
+              <img src="Resource/deshgram/image (1).png" alt="News 1" class="w-full h-40 object-cover rounded-t-lg" />
+              <a href="#" class="block p-2 text-sm font-bold hover:underline">বিগত সরকারের সময় দেশে অপরিকল্পিত বিনিয়োগ হয়েছে: উপদেষ্টা</a>
+            </div>
+            <div class="bg-white shadow rounded-lg pt-4">
+              <img src="Resource/deshgram/image (2).png" alt="News 2" class="w-full h-40 object-cover rounded-t-lg" />
+              <a href="#" class="block p-2 text-sm font-bold hover:underline">২৪ ঘণ্টায় ডেঙ্গুতে মৃত্যু নেই, হাসপাতালে ভর্তি ৬৭ জন</a>
+            </div>
+            <div class="bg-white shadow rounded-lg pt-4">
+              <img src="Resource/deshgram/image (3).png" alt="News 3" class="w-full h-40 object-cover rounded-t-lg" />
+              <a href="#" class="block p-2 text-sm font-bold hover:underline">প্রযুক্তির আশির্বাদ বিলুপ্তপ্রায় গরু নিয়ে হালচাষ</a>
+            </div>
+            <div class="bg-white shadow rounded-lg pt-4">
+              <img src="Resource/deshgram/image (4).png" alt="News 4" class="w-full h-40 object-cover rounded-t-lg" />
+              <a href="#" class="block p-2 text-sm font-bold hover:underline">বগুড়ায় ক্যাডেট মাদ্রাসার বার্ষিক অভিভাবক সমাবেশ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advertisement With Us -->
+    <section>
+      <div class="max-w-7xl mx-auto mt-10">
+        <!-- Advertisement Section -->
+        <h2 class="text-2xl font-bold mb-4">Advertisement With Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <img src="Resource/AD img/image.png" alt="Ad 1" class="w-full h-full rounded shadow object-cover" />
+          <img src="Resource/AD img/image (1).png" alt="Ad 2" class="w-full h-auto rounded shadow" />
+          <img src="Resource/AD img/image (1).png" alt="Ad 3" class="w-full h-auto rounded shadow" />
+          <img src="Resource/AD img/image (2).png" alt="Ad 4" class="w-full h-auto rounded shadow md:col-span-2" />
+          <img src="Resource/AD img/image (3).png" alt="Ad 5" class="w-full h-auto rounded shadow" />
+        </div>
+
+        <!-- Learn & Explore Section -->
+        <h2 class="text-2xl font-bold mt-8 mb-4">Learn & Explore</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow text-center">
+            <img src="Resource/ecom img/Group 1.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
+            <h3 class="font-semibold">StartUp Learning School</h3>
+            <p class="text-gray-500 text-sm">Mentor Tawhid Hasan</p>
+            <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-blue-400 hover:text-white rounded">Read Us</button>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow text-center">
+            <img src="Resource/ecom img/pngwing.com(1) 2.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
+            <h3 class="font-semibold">StartUp Learning School</h3>
+            <p class="text-gray-500 text-sm">Mentor Tawhid Hasan</p>
+            <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-blue-400 hover:text-white rounded">Read Us</button>
+            <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-red-200 hover:text-red-600 rounded">Analytics</button>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow text-center">
+            <img src="Resource/ecom img/pngwing.com(2) 1.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
+            <h3 class="font-semibold">StartUp Learning School</h3>
+            <p class="text-gray-500 text-sm">Mentor Tawhid Hasan</p>
+            <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-blue-400 hover:text-white rounded">Read Us</button>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow text-center">
+            <img src="Resource/ecom img/pngwing.com(9) 1.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
+            <h3 class="font-semibold">StartUp Learning School</h3>
+            <p class="text-gray-500 text-sm">Mentor Tawhid Hasan</p>
+            <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-blue-400 hover:text-white rounded">Read Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-4 text-center mt-6">&copy; 2025 MATE OR MOTE. All Rights Reserved.</footer>
 
-    <script>
-      function changeSlide(index) {
-        // Update slider position
-        document.getElementById("slides").style.transform = `translateX(-${index * 100}%)`;
+    <footer class="footer p-8 text-sm">
+      <div class="max-w-7xl mx-auto flex border-b border-gray-600">
+        <div class="px-2 py-2 pl-2"><a href="#" class="block text-gray-50 pr-6 border-r border-gray-600">Terms & Conditions</a></div>
+        <div class="p-2"><a href="#" class="block text-gray-50 pr-6 border-r border-gray-600">Community Guidelines</a></div>
+        <div class="p-2"><a href="#" class="block text-gray-50 pr-6 border-r border-gray-600">Privacy Policy</a></div>
+        <div class="p-2"><a href="#" class="block text-gray-50 pr-6">Disclaimer</a></div>
+      </div>
+      <div class="max-w-7xl mx-auto mt-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Legal Section -->
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-50 mb-2">Subscribe</h3>
+            <a href="#" class="block text-gray-50">Terms & Conditions</a>
+            <a href="#" class="block text-gray-50">Community Guidelines</a>
+            <a href="#" class="block text-gray-50">Privacy Policy</a>
+            <a href="#" class="block text-gray-50">Disclaimer</a>
+          </div>
 
-        // Update circle color
-        const buttons = document.querySelectorAll(".slide-button"); // Use a common class for buttons
-        buttons.forEach((btn) => btn.classList.remove("bg-blue-500", "ring-2", "ring-blue-300"));
-        buttons[index].classList.add("bg-blue-500", "ring-2", "ring-blue-300");
-      }
-    </script>
+          <!-- Services Section -->
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-50 mb-2">Business Services</h3>
+            <a href="#" class="block text-gray-50">Subscribe</a>
+            <a href="#" class="block text-gray-50">Business Services</a>
+            <a href="#" class="block text-gray-50">Digital + Home Delivery</a>
+            <a href="#" class="block text-gray-50">Subscriptions</a>
+          </div>
+
+          <!-- Company Section -->
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-50 mb-2">Contact us</h3>
+            <a href="#" class="block text-gray-50">About Us</a>
+            <a href="#" class="block text-gray-50">Contact us</a>
+            <a href="#" class="block text-gray-50">Work at The Mate</a>
+            <a href="#" class="block text-gray-50">Company Information</a>
+          </div>
+
+          <!-- Resources Section -->
+          <div class="space-y-2">
+            <h3 class="font-semibold text-gray-50 mb-2">About Us</h3>
+            <a href="#" class="block text-gray-50">FAQ</a>
+            <a href="#" class="block text-gray-50">Technical Support</a>
+            <a href="#" class="block text-gray-50">Accessibility</a>
+            <a href="#" class="block text-gray-50">Sustainability</a>
+          </div>
+        </div>
+
+        <!-- Additional Links -->
+        <div class="mt-8 pt-8 border-t border-gray-600 grid grid-cols-2 md:grid-cols-3 gap-4 items-center">
+          <!-- Download App -->
+          <div class="space-y-2 flex items-center gap-2">
+            <h3 class="font-semibold text-gray-50 p-3">Download App</h3>
+            <a href="#" class="block text-gray-50">
+              <img src="Resource/pngwing.com 2.png" alt="Google Play" />
+            </a>
+            <a href="#" class="block text-gray-50">
+              <img src="Resource/pngwing.com(1) 1.png" alt="App Store" />
+            </a>
+          </div>
+
+          <!-- Copyright -->
+          <div class="text-center text-sm text-gray-500 flex flex-col items-center">
+            <p>Copyright @2021 Mateomrade.com</p>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="space-y-2 flex items-center gap-2">
+            <h3 class="font-semibold text-gray-50 p-3">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href=""><img src="Resource/Social Icon/001-facebook.png" alt="Facebook" /></a>
+              <a href=""><img src="Resource/Social Icon/002-instagram.png" alt="Instagram" /></a>
+              <a href=""><img src="Resource/Social Icon/004-youtube.png" alt="YouTube" /></a>
+              <a href=""><img src="Resource/Social Icon/004-youtube.png" alt="YouTube" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="bg-red-600 h-10"></footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
