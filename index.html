@@ -7,6 +7,7 @@
     <link rel="icon" type="" href="Resource/icons8-news-96.png" />
     <link rel="stylesheet" href="styel.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </head>
   <body class="bg-gray-50 w-full">
     <!-- Navbar -->
@@ -53,7 +54,7 @@
         <!-- Scrollable Navigation -->
         <div id="navScroll" class="flex-1 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
           <div class="inline-flex whitespace-nowrap gap-4 px-0">
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Home</a>
+            <a href="#" class="transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Home</a>
             <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Business</a>
             <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Opinion</a>
             <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">World</a>
@@ -74,6 +75,7 @@
       </div>
     </section>
 
+    <!-- Braking News -->
     <section class="bg-red-100 text-gray-800 overflow-hidden max-w-7xl mx-auto rounded-sm mt-4">
       <div class="flex items-center gap-4">
         <span class="bg-white text-red-600 px-3 py-1 text-sm font-bold uppercase">Breaking News</span>
@@ -96,7 +98,7 @@
           <div class="flex p-6 rounded-lg gap-4">
             <!-- SLIDE 1 Content -->
             <div class="max-w-3xl">
-              <p class="font-extrabold text-5xl underline tracking-wide w-10/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
+              <p class="ml3 font-extrabold text-5xl underline tracking-wide w-10/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
               <button
                 type="button"
                 class="flex items-center justify-center gap-2 text-xl mt-6 rounded bg-neutral-100 px-6 pb-2 pt-2.5 font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
@@ -105,7 +107,9 @@
                 <img class="w-5 h-5" src="Resource/icons8-arrow-24.png" alt="" />
               </button>
             </div>
-            <div class=""><img class="h-full" src="Resource/Rectangle 39.png" alt="" /></div>
+            <div class="relative overflow-hidden rounded-lg">
+              <img class="h-full transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-105 object-cover rounded-lg" src="Resource/Rectangle 39.png" alt="" />
+            </div>
           </div>
         </div>
         <!-- SLIDE 2 -->
@@ -640,8 +644,7 @@
     </section>
 
     <!-- Footer -->
-
-    <footer class="footer p-8 text-sm">
+    <footer class="footer p-8 text-sm mt-10">
       <div class="max-w-7xl mx-auto flex border-b border-gray-600">
         <div class="px-2 py-2 pl-2"><a href="#" class="block text-gray-50 pr-6 border-r border-gray-600">Terms & Conditions</a></div>
         <div class="p-2"><a href="#" class="block text-gray-50 pr-6 border-r border-gray-600">Community Guidelines</a></div>
