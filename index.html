@@ -12,37 +12,45 @@
   <body class="bg-gray-50 w-full">
     <!-- Navbar -->
     <header class="bg-red-600 text-white p-4">
-      <div class="max-w-7xl container mx-auto flex justify-between">
+      <div class="max-w-7xl container mx-auto flex items-center justify-between">
+        <!-- Left Navigation -->
         <nav>
-          <ul class="flex space-x-4">
+          <ul class="flex items-center space-x-4">
             <li>
-              <img class="w-6 h-6" src="Resource/Menu_Icon.png" alt="menu_icon" />
+              <img class="w-6 h-6 cursor-pointer" src="Resource/Menu_Icon.png" alt="menu_icon" />
             </li>
             <li>
-              <div class="flex gap-1">
-                <img class="w-6 h-6" src="Resource/icons8-world-24.png" alt="menu_icon" />
+              <div class="flex items-center gap-1 cursor-pointer">
+                <img class="w-6 h-6" src="Resource/icons8-world-24.png" alt="language_icon" />
                 <a href="#" class="hover:underline">Bangla</a>
-                <img class="w-6 h-6" src="Resource/icons8-expand-arrow-24.png" alt="menu_icon" />
+                <img class="w-5 h-5" src="Resource/icons8-expand-arrow-24.png" alt="expand_icon" />
               </div>
             </li>
             <li><a href="#" class="hover:underline">Newsletter</a></li>
             <li><a href="#" class="hover:underline">Watchlist</a></li>
           </ul>
         </nav>
-        <div class="w-40 h-9">
-          <img src="Resource/Logo.png" alt="Mati O Moti" />
+
+        <!-- Logo -->
+        <div class="w-40 h-9 flex justify-center">
+          <img class="w-full h-auto" src="Resource/Logo.png" alt="Mati O Moti" />
         </div>
 
+        <!-- Right Navigation -->
         <nav>
-          <ul class="flex space-x-4">
-            <div class="flex gap-3">
-              <li><img class="w-6 h-6" src="Resource/icons8-search-50.png" alt="menu_icon" /></li>
-              <li><a href="#" class="hover:underline">Search</a></li>
-            </div>
-            <div class="flex gap-3">
-              <li><img class="w-6 h-6" src="Resource/icons8-account-32 (1).png" alt="menu_icon" /></li>
-              <li><a href="#" class="hover:underline">Account</a></li>
-            </div>
+          <ul class="flex items-center space-x-4">
+            <li>
+              <div class="flex items-center gap-2 cursor-pointer">
+                <img class="w-6 h-6" src="Resource/icons8-search-50.png" alt="search_icon" />
+                <a href="#" class="hover:underline">Search</a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-2 cursor-pointer">
+                <img class="w-6 h-6" src="Resource/icons8-account-32 (1).png" alt="account_icon" />
+                <a href="#" class="hover:underline">Account</a>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
@@ -54,20 +62,20 @@
         <!-- Scrollable Navigation -->
         <div id="navScroll" class="flex-1 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
           <div class="inline-flex whitespace-nowrap gap-4 px-0">
-            <a href="#" class="transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Home</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Business</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Opinion</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">World</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Economy</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Technology</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Environment</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Climate Change</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Health Fitness</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Entertainment</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Religion</a>
-            <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Sports</a>
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">Business</a>
+            <a href="#" class="menu-item">Opinion</a>
+            <a href="#" class="menu-item">World</a>
+            <a href="#" class="menu-item">Economy</a>
+            <a href="#" class="menu-item">Technology</a>
+            <a href="#" class="menu-item">Environment</a>
+            <a href="#" class="menu-item">Climate Change</a>
+            <a href="#" class="menu-item">Health Fitness</a>
+            <a href="#" class="menu-item">Entertainment</a>
+            <a href="#" class="menu-item">Religion</a>
+            <a href="#" class="menu-item">Sports</a>
             <div class="flex items-center">
-              <a href="#" class="relative hover:font-semibold hover:after:absolute hover:after:left-0 hover:after:bottom-[-3px] hover:after:w-full hover:after:h-1 hover:after:bg-red-300">Others</a>
+              <a href="#" class="menu-item">Others</a>
               <img class="w-6 h-6 ml-1" src="Resource/icons8-down-arrow-24.png" alt="downArrow" />
             </div>
           </div>
@@ -76,7 +84,7 @@
     </section>
 
     <!-- Braking News -->
-    <section class="bg-red-100 text-gray-800 overflow-hidden max-w-7xl mx-auto rounded-lg mt-4">
+    <section class="bg-red-100 text-gray-800 overflow-hidden max-w-7xl mx-auto rounded-sm mt-4">
       <div class="flex items-center gap-4">
         <span class="bg-white text-red-600 px-3 py-1 text-sm font-bold uppercase">Breaking News</span>
         <div class="w-full overflow-hidden relative">
@@ -91,110 +99,115 @@
     </section>
 
     <!-- Banner WITH SLIDER  -->
-    <div class="relative w-full overflow-hidden max-w-7xl mx-auto">
+    <div class="relative w-full overflow-hidden max-w-7xl mx-auto mt-10">
       <div class="flex w-full transition-transform ease-in-out duration-500" id="slides">
         <!-- SLIDE 1 -->
-        <div class="w-full flex-none slide mt-4" id="slide1">
-          <div class="flex rounded-lg gap-4">
-            <!-- SLIDE 1 Content -->
-            <div class="max-w-3xl">
-              <p class="ml3 font-extrabold text-5xl tracking-wide w-10/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
-              <button
-                type="button"
-                class="flex items-center justify-center gap-2 text-xl mt-6 rounded bg-neutral-100 px-6 pb-2 pt-2.5 font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              >
+        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6 p-4" id="slide1">
+          <!-- Content Wrapper -->
+          <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
+            <!-- Text Section -->
+            <div class="max-w-3xl text-center md:text-left">
+              <p class="ml3 font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide w-11/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
+              <button type="button" class="flex items-center justify-center gap-2 text-sm sm:text-lg mt-4 sm:mt-6 rounded bg-neutral-100 px-4 sm:px-6 py-2 font-medium text-black shadow-light-3 transition hover:bg-neutral-200 focus:outline-none">
                 Read More
-                <img class="w-5 h-5 rounded-lg" src="Resource/icons8-arrow-24.png" alt="" />
+                <img class="w-4 sm:w-5 h-4 sm:h-5 rounded-sm" src="Resource/icons8-arrow-24.png" alt="" />
               </button>
             </div>
-            <div class="relative overflow-hidden rounded-lg">
-              <img class="h-full transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-105 object-cover rounded-lg" src="Resource/Rectangle 39.png" alt="" />
+            <!-- Image Section -->
+            <div class="relative overflow-hidden rounded-sm w-full md:w-auto">
+              <img class="w-full h-auto md:h-full transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-105 object-cover rounded-sm" src="Resource/Rectangle 39.png" alt="" />
             </div>
           </div>
         </div>
+
         <!-- SLIDE 2 -->
-        <div class="w-full flex-none slide flex justify-center items-center" id="slide2">
-          <div class="flex rounded-lg gap-4">
-            <!-- SLIDE 2 Content -->
-            <div class="max-w-3xl">
-              <p class="font-extrabold text-5xl underline tracking-wide w-10/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
-              <button
-                type="button"
-                class="flex items-center justify-center gap-2 text-xl mt-6 rounded bg-neutral-100 px-6 pb-2 pt-2.5 font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              >
+        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6 p-4" id="slide2">
+          <!-- Content Wrapper -->
+          <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
+            <!-- Text Section -->
+            <div class="max-w-3xl text-center md:text-left">
+              <p class="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide w-11/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
+              <button type="button" class="flex items-center justify-center gap-2 text-sm sm:text-lg mt-4 sm:mt-6 rounded bg-neutral-100 px-4 sm:px-6 py-2 font-medium text-black shadow-light-3 transition hover:bg-neutral-200 focus:outline-none">
                 Read More
-                <img class="w-5 h-5 rounded-lg" src="Resource/icons8-arrow-24.png" alt="" />
+                <img class="w-4 sm:w-5 h-4 sm:h-5 rounded-sm" src="Resource/icons8-arrow-24.png" alt="" />
               </button>
             </div>
-            <div class=""><img class="h-full" src="Resource/Rectangle 39.png" alt="" /></div>
+            <!-- Image Section -->
+            <div class="relative overflow-hidden rounded-sm w-full md:w-auto">
+              <img class="w-full h-auto md:h-full transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-105 object-cover rounded-sm" src="Resource/Rectangle 39.png" alt="" />
+            </div>
           </div>
         </div>
         <!-- SLIDE 3 -->
-        <div class="w-full flex-none slide p-4" id="slide3">
-          <div class="flex rounded-lg gap-4">
-            <!-- SLIDE 3 Content -->
-            <div class="max-w-3xl">
-              <p class="font-extrabold text-5xl underline tracking-wide w-10/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
-              <button
-                type="button"
-                class="flex items-center justify-center gap-2 text-xl mt-6 rounded bg-neutral-100 px-6 pb-2 pt-2.5 font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              >
+        <div class="w-full flex-none slide flex justify-center items-center" id="slide3">
+          <!-- Content Wrapper -->
+          <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
+            <!-- Text Section -->
+            <div class="max-w-3xl text-center md:text-left">
+              <p class="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide w-11/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
+              <button type="button" class="flex items-center justify-center gap-2 text-sm sm:text-lg mt-4 sm:mt-6 rounded bg-neutral-100 px-4 sm:px-6 py-2 font-medium text-black shadow-light-3 transition hover:bg-neutral-200 focus:outline-none">
                 Read More
-                <img class="w-5 h-5 rounded-lg" src="Resource/icons8-arrow-24.png" alt="" />
+                <img class="w-4 sm:w-5 h-4 sm:h-5 rounded-sm" src="Resource/icons8-arrow-24.png" alt="" />
               </button>
             </div>
-            <div class=""><img class="h-full" src="Resource/Rectangle 39.png" alt="" /></div>
+            <!-- Image Section -->
+            <div class="relative overflow-hidden rounded-sm w-full md:w-auto">
+              <img class="w-full h-auto md:h-full transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-105 object-cover rounded-sm" src="Resource/Rectangle 39.png" alt="" />
+            </div>
           </div>
         </div>
         <!-- SLIDE 4 -->
-        <div class="w-full flex-none slide p-4" id="slide4">
-          <div class="flex rounded-lg gap-4">
-            <!-- SLIDE 4 Content -->
-            <div class="max-w-3xl">
-              <p class="font-extrabold text-5xl underline tracking-wide w-10/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
-              <button
-                type="button"
-                class="flex items-center justify-center gap-2 text-xl mt-6 rounded bg-neutral-100 px-6 pb-2 pt-2.5 font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              >
+        <div class="w-full flex-none slide flex justify-center items-center" id="slide4">
+          <!-- Content Wrapper -->
+          <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
+            <!-- Text Section -->
+            <div class="max-w-3xl text-center md:text-left">
+              <p class="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide w-11/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
+              <button type="button" class="flex items-center justify-center gap-2 text-sm sm:text-lg mt-4 sm:mt-6 rounded bg-neutral-100 px-4 sm:px-6 py-2 font-medium text-black shadow-light-3 transition hover:bg-neutral-200 focus:outline-none">
                 Read More
-                <img class="w-5 h-5 rounded-lg" src="Resource/icons8-arrow-24.png" alt="" />
+                <img class="w-4 sm:w-5 h-4 sm:h-5 rounded-sm" src="Resource/icons8-arrow-24.png" alt="" />
               </button>
             </div>
-            <div class=""><img class="h-full" src="Resource/Rectangle 39.png" alt="" /></div>
+            <!-- Image Section -->
+            <div class="relative overflow-hidden rounded-sm w-full md:w-auto">
+              <img class="w-full h-auto md:h-full transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-105 object-cover rounded-sm" src="Resource/Rectangle 39.png" alt="" />
+            </div>
           </div>
         </div>
         <!-- SLIDE 5 -->
-        <div class="w-full flex-none slide flex justify-center items-center p-4" id="slide5">
-          <div class="flex rounded-lg gap-4">
-            <!-- SLIDE 5 Content -->
-            <div class="max-w-3xl">
-              <p class="font-extrabold text-5xl underline tracking-wide w-10/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
-              <button
-                type="button"
-                class="flex items-center justify-center gap-2 text-xl mt-6 rounded bg-neutral-100 px-6 pb-2 pt-2.5 font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              >
+        <div class="w-full flex-none slide flex justify-center items-center" id="slide5">
+          <!-- Content Wrapper -->
+          <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
+            <!-- Text Section -->
+            <div class="max-w-3xl text-center md:text-left">
+              <p class="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide w-11/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
+              <button type="button" class="flex items-center justify-center gap-2 text-sm sm:text-lg mt-4 sm:mt-6 rounded bg-neutral-100 px-4 sm:px-6 py-2 font-medium text-black shadow-light-3 transition hover:bg-neutral-200 focus:outline-none">
                 Read More
-                <img class="w-5 h-5 rounded-lg" src="Resource/icons8-arrow-24.png" alt="" />
+                <img class="w-4 sm:w-5 h-4 sm:h-5 rounded-sm" src="Resource/icons8-arrow-24.png" alt="" />
               </button>
             </div>
-            <div class=""><img class="h-full" src="Resource/Rectangle 39.png" alt="" /></div>
+            <!-- Image Section -->
+            <div class="relative overflow-hidden rounded-sm w-full md:w-auto">
+              <img class="w-full h-auto md:h-full transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-105 object-cover rounded-sm" src="Resource/Rectangle 39.png" alt="" />
+            </div>
           </div>
         </div>
         <!-- SLIDE 6 -->
-        <div class="w-full flex-none slide flex justify-center items-center p-4" id="slide6">
-          <div class="flex rounded-lg gap-4">
-            <!-- SLIDE 6 Content -->
-            <div class="max-w-3xl">
-              <p class="font-extrabold text-5xl underline tracking-wide w-10/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
-              <button
-                type="button"
-                class="flex items-center justify-center gap-2 text-xl mt-6 rounded bg-neutral-100 px-6 pb-2 pt-2.5 font-medium leading-normal text-black shadow-light-3 transition duration-150 ease-in-out hover:bg-neutral-200 hover:shadow-light-2 focus:bg-neutral-200 focus:shadow-light-2 focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-light-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              >
+        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6 p-4" id="slide6">
+          <!-- Content Wrapper -->
+          <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
+            <!-- Text Section -->
+            <div class="max-w-3xl text-center md:text-left">
+              <p class="ml3 font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide w-11/12 leading-relaxed">Bangladesh’s interim govt struggles to stem nation’s long-held grievances</p>
+              <button type="button" class="flex items-center justify-center gap-2 text-sm sm:text-lg mt-4 sm:mt-6 rounded bg-neutral-100 px-4 sm:px-6 py-2 font-medium text-black shadow-light-3 transition hover:bg-neutral-200 focus:outline-none">
                 Read More
-                <img class="w-5 h-5 rounded-lg" src="Resource/icons8-arrow-24.png" alt="" />
+                <img class="w-4 sm:w-5 h-4 sm:h-5 rounded-sm" src="Resource/icons8-arrow-24.png" alt="" />
               </button>
             </div>
-            <div class=""><img class="h-full" src="Resource/Rectangle 39.png" alt="" /></div>
+            <!-- Image Section -->
+            <div class="relative overflow-hidden rounded-sm w-full md:w-auto">
+              <img class="w-full h-auto md:h-full transition-transform duration-500 ease-out hover:-translate-y-2 hover:scale-105 object-cover rounded-sm" src="Resource/Rectangle 39.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -213,24 +226,26 @@
     <!-- Advertisement -->
     <section class="container mx-auto my-4 text-center max-w-7xl">
       <div class="bg-gray-300 py-4 flex justify-center rounded-sm">
-        <div class="w-full max-w-44 h-24 flex items-center justify-center text-slate-500 font-semibold">
+        <div class="w-full max-w-[750px] h-24 sm:h-28 md:h-32 flex items-center justify-center text-slate-500 font-semibold text-sm sm:text-base md:text-lg lg:text-xl">
           Advertisement <br />
-          You can place ads <br />750x100
+          You can place ads <br />
+          <!-- <span class="text-xs sm:text-sm md:text-base">750x100</span> -->
         </div>
       </div>
     </section>
 
+    <!-- Opinon Section  -->
     <div class="container mx-auto mt-10 max-w-7xl">
       <!-- Main Section -->
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Featured Article -->
-        <div class="grid grid-cols-2 md:col-span-2 p-6 bg-white shadow-lg rounded-lg">
+        <div class="grid grid-cols-2 md:col-span-2 p-6 bg-white shadow-lg rounded-sm">
           <div class="">
             <h2 class="text-gray-500 text-sm font-semibold">Opinion</h2>
             <h1 class="text-2xl md:text-3xl font-bold mt-2 underline w-11/12">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h1>
             <p class="text-gray-600 mt-3 text-sm w-11/12">DHAKA, Bangladesh (AP) — Bangladesh’s interim government led by Nobel laureate Muhammad Yunus on Wednesday lifted a ban on the Islamist Jamaat-e-Islami party...</p>
           </div>
-          <div class=""><img src="Resource/image.png" alt="Featured Image" class="mt-4 w-96 h-80 rounded-lg object-cover" /></div>
+          <div class=""><img src="Resource/image.png" alt="Featured Image" class="mt-4 w-96 h-80 rounded-sm object-cover" /></div>
           <div class="mt-6">
             <div class="p-2">
               <div class="flex gap-4">
@@ -262,7 +277,7 @@
         </div>
 
         <!-- Sidebar -->
-        <div class="bg-white p-6 shadow-lg rounded-lg">
+        <div class="bg-white p-6 shadow-lg rounded-sm">
           <h2 class="text-gray-500 text-sm font-semibold">Politics</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2 underline">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h3>
@@ -278,28 +293,28 @@
 
       <!-- News Grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-        <div class="bg-white p-4 shadow-lg rounded-lg">
+        <div class="bg-white p-4 shadow-lg rounded-sm">
           <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
           <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
         </div>
 
-        <div class="bg-white p-4 shadow-lg rounded-lg">
+        <div class="bg-white p-4 shadow-lg rounded-sm">
           <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
           <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
         </div>
 
-        <div class="bg-white p-4 shadow-lg rounded-lg">
+        <div class="bg-white p-4 shadow-lg rounded-sm">
           <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
           <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
         </div>
 
-        <div class="bg-white p-4 shadow-lg rounded-lg">
+        <div class="bg-white p-4 shadow-lg rounded-sm">
           <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
           <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
           <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
@@ -309,7 +324,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="container mx-auto my-6 p-4 bg-white shadow-md max-w-7xl">
+    <section class="container mx-auto my-6 p-4 bg-white shadow-md max-w-7xl rounded-sm">
       <h2 class="text-2xl font-bold">Bangladesh’s interim govt struggles...</h2>
       <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <button class="mt-2 bg-red-600 text-white px-4 py-2">Read More</button>
@@ -317,15 +332,15 @@
 
     <!-- News Grid -->
     <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl">
-      <div class="bg-white shadow-md p-4">
+      <div class="bg-white shadow-md p-4 rounded-sm">
         <h3 class="text-lg font-bold">Politics</h3>
         <p class="text-gray-700">Bangladesh’s interim government led by Yunus...</p>
       </div>
-      <div class="bg-white shadow-md p-4">
+      <div class="bg-white shadow-md p-4 rounded-sm">
         <h3 class="text-lg font-bold">World News</h3>
         <p class="text-gray-700">Canada’s inflation rate fell to 1.9%...</p>
       </div>
-      <div class="bg-white shadow-md p-4">
+      <div class="bg-white shadow-md p-4 rounded-sm">
         <h3 class="text-lg font-bold">Economy</h3>
         <p class="text-gray-700">Stock market sees record high...</p>
       </div>
@@ -342,10 +357,10 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Large Video Cards -->
         <div class="col-span-1 md:col-span-2">
-          <div class="bg-white rounded-lg shadow-md overflow-hidden flex gap-5">
+          <div class="bg-white rounded-sm shadow-md overflow-hidden flex gap-5">
             <!-- lg Video1 -->
             <div class="">
-              <div class="relative h-60 rounded-lg">
+              <div class="relative h-60 rounded-sm">
                 <iframe class="w-full h-full rounded-tr-lg" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="p-4 mb-2">
@@ -355,7 +370,7 @@
             </div>
             <!-- lg Video2 -->
             <div class="">
-              <div class="relative h-60 rounded-lg">
+              <div class="relative h-60 rounded-sm">
                 <iframe class="w-full h-full rounded-tl-lg" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="p-4">
@@ -369,8 +384,8 @@
         <!-- Small Video Cards -->
         <div class="space-y-4">
           <div class="space-y-4">
-            <div class="flex items-start h-28 bg-white rounded-lg shadow-md overflow-hidden">
-              <div class="relative w-44 h-28 rounded-lg">
+            <div class="flex items-start h-28 bg-white rounded-sm shadow-md overflow-hidden">
+              <div class="relative w-44 h-28 rounded-sm">
                 <iframe class="w-full h-full" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="p-3">
@@ -380,8 +395,8 @@
             </div>
           </div>
 
-          <div class="flex items-start h-28 bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="relative w-44 h-28 rounded-lg">
+          <div class="flex items-start h-28 bg-white rounded-sm shadow-md overflow-hidden">
+            <div class="relative w-44 h-28 rounded-sm">
               <iframe class="w-full h-full" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="p-3">
@@ -390,8 +405,8 @@
             </div>
           </div>
 
-          <div class="flex items-start h-28 bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="relative w-44 h-28 rounded-lg">
+          <div class="flex items-start h-28 bg-white rounded-sm shadow-md overflow-hidden">
+            <div class="relative w-44 h-28 rounded-sm">
               <iframe class="w-full h-full" src="https://www.youtube.com/embed/jFT_27EZqBg" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="p-3">
@@ -406,28 +421,28 @@
     <!-- NEWS PART AFTER VIDEO -->
     <!-- News Grid -->
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 max-w-7xl mx-auto">
-      <div class="bg-white p-4 shadow-lg rounded-lg">
+      <div class="bg-white p-4 shadow-lg rounded-sm">
         <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
         <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
         <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
         <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
       </div>
 
-      <div class="bg-white p-4 shadow-lg rounded-lg">
+      <div class="bg-white p-4 shadow-lg rounded-sm">
         <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
         <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
         <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
         <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
       </div>
 
-      <div class="bg-white p-4 shadow-lg rounded-lg">
+      <div class="bg-white p-4 shadow-lg rounded-sm">
         <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
         <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
         <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
         <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
       </div>
 
-      <div class="bg-white p-4 shadow-lg rounded-lg">
+      <div class="bg-white p-4 shadow-lg rounded-sm">
         <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
         <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
         <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
@@ -443,37 +458,37 @@
         <a href="#" class="text-blue-600 font-semibold">See All →</a>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
-        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+        <div class="flex space-x-4 border p-4 rounded-sm bg-white">
           <img src="Resource/image (3).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
-        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+        <div class="flex space-x-4 border p-4 rounded-sm bg-white">
           <img src="Resource/image 77.png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
-        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+        <div class="flex space-x-4 border p-4 rounded-sm bg-white">
           <img src="Resource/image (4).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
-        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+        <div class="flex space-x-4 border p-4 rounded-sm bg-white">
           <img src="Resource/Rectangle 38 (3).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
-        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+        <div class="flex space-x-4 border p-4 rounded-sm bg-white">
           <img src="Resource/Rectangle 38 (1).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
-        <div class="flex space-x-4 border p-4 rounded-lg bg-white">
+        <div class="flex space-x-4 border p-4 rounded-sm bg-white">
           <img src="Resource/Rectangle 38.png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
@@ -491,36 +506,36 @@
           <a href="#" class="text-blue-600 font-semibold flex items-center">See All →</a>
         </div>
         <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-white p-4 rounded-lg shadow">
-            <div class="relative w-96 h-56 rounded-lg mb-4">
-              <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+          <div class="bg-white p-4 rounded-sm shadow">
+            <div class="relative w-96 h-56 rounded-sm mb-4">
+              <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
             </div>
             <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded mt-4">Farming</span>
             <a href="#" class="block mt-2 text-lg font-bold hover:underline">The Evolution of Farming: Embracing Technology in Agriculture</a>
           </div>
           <!-- Sidebar 1 content  -->
           <div class="grid grid-cols-1 gap-4">
-            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
-              <div class="relative w-40 h-24 rounded-lg">
-                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
+              <div class="relative w-40 h-24 rounded-sm">
+                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
               </div>
               <div>
                 <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
                 <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
               </div>
             </div>
-            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
-              <div class="relative w-40 h-24 rounded-lg">
-                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
+              <div class="relative w-40 h-24 rounded-sm">
+                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
               </div>
               <div>
                 <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
                 <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
               </div>
             </div>
-            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
-              <div class="relative w-40 h-24 rounded-lg">
-                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
+              <div class="relative w-40 h-24 rounded-sm">
+                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
               </div>
               <div>
                 <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
@@ -530,27 +545,27 @@
           </div>
           <!-- sidebar 2 content  -->
           <div class="grid grid-cols-1 gap-4">
-            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
-              <div class="relative w-40 h-24 rounded-lg">
-                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
+              <div class="relative w-40 h-24 rounded-sm">
+                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
               </div>
               <div>
                 <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
                 <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
               </div>
             </div>
-            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
-              <div class="relative w-40 h-24 rounded-lg">
-                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
+              <div class="relative w-40 h-24 rounded-sm">
+                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
               </div>
               <div>
                 <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
                 <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
               </div>
             </div>
-            <div class="flex space-x-4 bg-white p-4 rounded-lg shadow">
-              <div class="relative w-40 h-24 rounded-lg">
-                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
+              <div class="relative w-40 h-24 rounded-sm">
+                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
               </div>
               <div>
                 <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
@@ -574,25 +589,25 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <!-- Large Featured News -->
           <div class="md:col-span-2 shadow p-4">
-            <img src="Resource/deshgram/image.png" alt="Featured News" class="w-full h-[458px] object-cover rounded-lg" />
+            <img src="Resource/deshgram/image.png" alt="Featured News" class="w-full h-[458px] object-cover rounded-sm" />
             <a href="#" class="block mt-2 text-lg font-bold hover:underline">বেতন না পাওয়া ও দুর্ব্যবহারের ক্ষোভে ৭ জনকে খুন</a>
           </div>
 
           <!-- Small News Cards -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="bg-white shadow rounded-lg pt-4">
+            <div class="bg-white shadow rounded-sm pt-4">
               <img src="Resource/deshgram/image (1).png" alt="News 1" class="w-full h-40 object-cover rounded-t-lg" />
               <a href="#" class="block p-2 text-sm font-bold hover:underline">বিগত সরকারের সময় দেশে অপরিকল্পিত বিনিয়োগ হয়েছে: উপদেষ্টা</a>
             </div>
-            <div class="bg-white shadow rounded-lg pt-4">
+            <div class="bg-white shadow rounded-sm pt-4">
               <img src="Resource/deshgram/image (2).png" alt="News 2" class="w-full h-40 object-cover rounded-t-lg" />
               <a href="#" class="block p-2 text-sm font-bold hover:underline">২৪ ঘণ্টায় ডেঙ্গুতে মৃত্যু নেই, হাসপাতালে ভর্তি ৬৭ জন</a>
             </div>
-            <div class="bg-white shadow rounded-lg pt-4">
+            <div class="bg-white shadow rounded-sm pt-4">
               <img src="Resource/deshgram/image (3).png" alt="News 3" class="w-full h-40 object-cover rounded-t-lg" />
               <a href="#" class="block p-2 text-sm font-bold hover:underline">প্রযুক্তির আশির্বাদ বিলুপ্তপ্রায় গরু নিয়ে হালচাষ</a>
             </div>
-            <div class="bg-white shadow rounded-lg pt-4">
+            <div class="bg-white shadow rounded-sm pt-4">
               <img src="Resource/deshgram/image (4).png" alt="News 4" class="w-full h-40 object-cover rounded-t-lg" />
               <a href="#" class="block p-2 text-sm font-bold hover:underline">বগুড়ায় ক্যাডেট মাদ্রাসার বার্ষিক অভিভাবক সমাবেশ</a>
             </div>
@@ -617,26 +632,26 @@
         <!-- Learn & Explore Section -->
         <h2 class="text-2xl font-bold mt-8 mb-4">Learn & Explore</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="bg-white p-4 rounded-lg shadow text-center">
+          <div class="bg-white p-4 rounded-sm shadow text-center">
             <img src="Resource/ecom img/Group 1.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
             <h3 class="font-semibold">StartUp Learning School</h3>
             <p class="text-gray-500 text-sm">Mentor Tawhid Hasan</p>
             <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-blue-400 hover:text-white rounded">Read Us</button>
           </div>
-          <div class="bg-white p-4 rounded-lg shadow text-center">
+          <div class="bg-white p-4 rounded-sm shadow text-center">
             <img src="Resource/ecom img/pngwing.com(1) 2.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
             <h3 class="font-semibold">StartUp Learning School</h3>
             <p class="text-gray-500 text-sm">Mentor Tawhid Hasan</p>
             <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-blue-400 hover:text-white rounded">Read Us</button>
             <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-red-200 hover:text-red-600 rounded">Analytics</button>
           </div>
-          <div class="bg-white p-4 rounded-lg shadow text-center">
+          <div class="bg-white p-4 rounded-sm shadow text-center">
             <img src="Resource/ecom img/pngwing.com(2) 1.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
             <h3 class="font-semibold">StartUp Learning School</h3>
             <p class="text-gray-500 text-sm">Mentor Tawhid Hasan</p>
             <button class="mt-2 px-4 py-1 bg-slate-100 text-gray-500 hover:bg-blue-400 hover:text-white rounded">Read Us</button>
           </div>
-          <div class="bg-white p-4 rounded-lg shadow text-center">
+          <div class="bg-white p-4 rounded-sm shadow text-center">
             <img src="Resource/ecom img/pngwing.com(9) 1.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
             <h3 class="font-semibold">StartUp Learning School</h3>
             <p class="text-gray-500 text-sm">Mentor Tawhid Hasan</p>
@@ -708,7 +723,7 @@
 
           <!-- Copyright -->
           <div class="text-center text-sm text-gray-500 flex flex-col items-center">
-            <p>Copyright @2021 Mateomrade.com</p>
+            <p>Copyright @2021 Mateomoti.com</p>
           </div>
 
           <!-- Follow Us -->

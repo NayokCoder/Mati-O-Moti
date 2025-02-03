@@ -65,3 +65,9 @@ body {
 .hover\:pause-marquee:hover {
   animation-play-state: paused;
 }
+
+.menu-item {
+  @apply transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 
+  relative hover:font-semibold after:absolute after:left-0 after:-bottom-1 
+  after:w-full after:h-1 after:bg-red-300 after:opacity-0 hover:after:opacity-100;
+}
