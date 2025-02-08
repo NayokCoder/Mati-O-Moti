@@ -14,22 +14,24 @@
     <header class="bg-red-600 text-white p-4">
       <div class="max-w-7xl container mx-auto flex items-center justify-between">
         <!-- Left Navigation -->
-        <nav>
-          <ul class="flex items-center space-x-4">
-            <li>
-              <img class="w-6 h-6 cursor-pointer" src="Resource/Menu_Icon.png" alt="menu_icon" />
-            </li>
-            <li>
-              <div class="flex items-center gap-1 cursor-pointer">
-                <img class="w-6 h-6" src="Resource/icons8-world-24.png" alt="language_icon" />
-                <a href="#" class="hover:underline">Bangla</a>
-                <img class="w-5 h-5" src="Resource/icons8-expand-arrow-24.png" alt="expand_icon" />
-              </div>
-            </li>
-            <li><a href="#" class="hover:underline">Newsletter</a></li>
-            <li><a href="#" class="hover:underline">Watchlist</a></li>
-          </ul>
-        </nav>
+        <div class="flex items-center space-x-4">
+          <button id="menu-toggle" class="">
+            <img class="w-6 h-6" src="Resource/Menu_Icon.png" alt="menu_icon" />
+          </button>
+          <nav class="hidden md:flex">
+            <ul class="flex items-center space-x-4">
+              <li>
+                <div class="flex items-center gap-1 cursor-pointer">
+                  <img class="w-6 h-6" src="Resource/icons8-world-24.png" alt="language_icon" />
+                  <a href="#" class="hover:underline">Bangla</a>
+                  <img class="w-5 h-5" src="Resource/icons8-expand-arrow-24.png" alt="expand_icon" />
+                </div>
+              </li>
+              <li><a href="#" class="hover:underline">Newsletter</a></li>
+              <li><a href="#" class="hover:underline">Watchlist</a></li>
+            </ul>
+          </nav>
+        </div>
 
         <!-- Logo -->
         <div class="w-40 h-9 flex justify-center">
@@ -37,7 +39,7 @@
         </div>
 
         <!-- Right Navigation -->
-        <nav>
+        <nav class="hidden md:flex">
           <ul class="flex items-center space-x-4">
             <li>
               <div class="flex items-center gap-2 cursor-pointer">
@@ -53,6 +55,33 @@
             </li>
           </ul>
         </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-red-700 p-4">
+        <ul class="flex flex-col space-y-4">
+          <li>
+            <div class="flex items-center gap-1 cursor-pointer">
+              <img class="w-6 h-6" src="Resource/icons8-world-24.png" alt="language_icon" />
+              <a href="#" class="hover:underline">Bangla</a>
+              <img class="w-5 h-5" src="Resource/icons8-expand-arrow-24.png" alt="expand_icon" />
+            </div>
+          </li>
+          <li><a href="#" class="hover:underline">Newsletter</a></li>
+          <li><a href="#" class="hover:underline">Watchlist</a></li>
+          <li>
+            <div class="flex items-center gap-2 cursor-pointer">
+              <img class="w-6 h-6" src="Resource/icons8-search-50.png" alt="search_icon" />
+              <a href="#" class="hover:underline">Search</a>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-2 cursor-pointer">
+              <img class="w-6 h-6" src="Resource/icons8-account-32 (1).png" alt="account_icon" />
+              <a href="#" class="hover:underline">Account</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -102,7 +131,7 @@
     <div class="relative w-full overflow-hidden max-w-7xl mx-auto mt-10">
       <div class="flex w-full transition-transform ease-in-out duration-500" id="slides">
         <!-- SLIDE 1 -->
-        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6 p-4" id="slide1">
+        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6" id="slide1">
           <!-- Content Wrapper -->
           <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
             <!-- Text Section -->
@@ -121,7 +150,7 @@
         </div>
 
         <!-- SLIDE 2 -->
-        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6 p-4" id="slide2">
+        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6" id="slide2">
           <!-- Content Wrapper -->
           <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
             <!-- Text Section -->
@@ -193,7 +222,7 @@
           </div>
         </div>
         <!-- SLIDE 6 -->
-        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6 p-4" id="slide6">
+        <div class="w-full flex-none slide flex flex-col md:flex-row justify-center items-center gap-6" id="slide6">
           <!-- Content Wrapper -->
           <div class="flex flex-col md:flex-row rounded-sm gap-4 w-full">
             <!-- Text Section -->
@@ -233,95 +262,72 @@
         </div>
       </div>
     </section>
+    <section class="p-6 bg-purple-50">
+      <!-- Opinon Section  -->
+      <div class="container mx-auto mt-10 max-w-7xl">
+        <!-- Main Section -->
 
-    <!-- Opinon Section  -->
-    <div class="container mx-auto mt-10 max-w-7xl">
-      <!-- Main Section -->
-      <div class="grid md:grid-cols-3 gap-6">
-        <!-- Featured Article -->
-        <div class="grid grid-cols-2 md:col-span-2 p-6 bg-white shadow-lg rounded-sm">
-          <div class="">
+        <div class="flex flex-col sm:flex-row gap-6 mt-6">
+          <div class="p-6 bg-white shadow-lg rounded-sm w-full md:w-2/3">
             <h2 class="text-gray-500 text-sm font-semibold">Opinion</h2>
-            <h1 class="text-2xl md:text-3xl font-bold mt-2 underline w-11/12">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h1>
-            <p class="text-gray-600 mt-3 text-sm w-11/12">DHAKA, Bangladesh (AP) — Bangladesh’s interim government led by Nobel laureate Muhammad Yunus on Wednesday lifted a ban on the Islamist Jamaat-e-Islami party...</p>
-          </div>
-          <div class=""><img src="Resource/image.png" alt="Featured Image" class="mt-4 w-96 h-80 rounded-sm object-cover" /></div>
-          <div class="mt-6">
-            <div class="p-2">
+            <div class="flex flex-col xl:flex-row gap-4 mt-5">
+              <div class="w-full xl:w-8/12">
+                <h1 class="text-2xl md:text-3xl font-bold underline">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h1>
+                <p class="text-gray-600 mt-3 text-sm">DHAKA, Bangladesh (AP) — Bangladesh’s interim government led by Nobel laureate Muhammad Yunus on Wednesday lifted a ban on the Islamist Jamaat-e-Islami party...</p>
+              </div>
+              <img src="Resource/image.png" alt="Featured Image" class="w-full h-80 rounded-sm object-cover" />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
               <div class="flex gap-4">
                 <img class="w-32 h-24 rounded-sm" src="Resource/Rectangle 39.png" alt="" />
-                <p class="underline items-center mt-2 font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
+                <p class="underline font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
               </div>
-            </div>
-            <div class="p-2">
               <div class="flex gap-4">
                 <img class="w-32 h-24 rounded-sm" src="Resource/image (1).png" alt="" />
-                <p class="underline items-center mt-2 font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
+                <p class="underline font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
               </div>
             </div>
           </div>
-          <div class="mt-6">
-            <div class="p-2">
-              <div class="flex gap-4">
-                <img class="w-32 h-24 rounded-sm" src="Resource/image (2).png" alt="" />
-                <p class="underline items-center mt-2 font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
-              </div>
-            </div>
-            <div class="p-2">
-              <div class="flex gap-4">
-                <img class="w-32 h-24 rounded-sm" src="Resource/image (3).png" alt="" />
-                <p class="underline items-center mt-2 font-bold">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat</p>
-              </div>
-            </div>
+          <div class="bg-white p-6 shadow-lg rounded-sm w-full md:w-1/3">
+            <h2 class="text-gray-500 text-sm font-semibold mb-4">Politics</h2>
+            <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+            <h3 class="text-lg font-semibold mt-2 underline">Bangladesh’s interim government lifts ban on Jamaat-e-Islami</h3>
+            <p class="text-gray-600 text-sm mt-2">DHAKA, Bangladesh (AP) — Bangladesh’s interim government...</p>
           </div>
         </div>
 
-        <!-- Sidebar -->
-        <div class="bg-white p-6 shadow-lg rounded-sm">
-          <h2 class="text-gray-500 text-sm font-semibold">Politics</h2>
-          <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
-          <h3 class="text-lg font-semibold mt-2 underline">Bangladesh’s interim government led by Yunus lifts ban on the Islamist Jamaat-e-Islami party</h3>
-          <p class="text-gray-600 text-sm mt-2">DHAKA, Bangladesh (AP) — Bangladesh’s interim government...</p>
+        <!-- News Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          <div class="bg-white p-4 shadow-lg rounded-sm">
+            <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
+            <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+            <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
+            <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
+          </div>
 
-          <h3 class="text-lg font-semibold mt-4 underline">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">DHAKA, Bangladesh (AP) — Bangladesh’s interim government...</p>
+          <div class="bg-white p-4 shadow-lg rounded-sm">
+            <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
+            <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+            <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
+            <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
+          </div>
 
-          <h3 class="text-lg font-semibold mt-4 underline">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">DHAKA, Bangladesh (AP) — Bangladesh’s interim government...</p>
+          <div class="bg-white p-4 shadow-lg rounded-sm">
+            <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
+            <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+            <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
+            <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
+          </div>
+
+          <div class="bg-white p-4 shadow-lg rounded-sm">
+            <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
+            <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
+            <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
+            <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
+          </div>
         </div>
       </div>
-
-      <!-- News Grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-        <div class="bg-white p-4 shadow-lg rounded-sm">
-          <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
-          <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
-          <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
-        </div>
-
-        <div class="bg-white p-4 shadow-lg rounded-sm">
-          <h2 class="text-gray-500 text-sm font-semibold">Environment</h2>
-          <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
-          <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
-        </div>
-
-        <div class="bg-white p-4 shadow-lg rounded-sm">
-          <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
-          <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
-          <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
-        </div>
-
-        <div class="bg-white p-4 shadow-lg rounded-sm">
-          <h2 class="text-gray-500 text-sm font-semibold">Climate Change</h2>
-          <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">Live Now</span>
-          <h3 class="text-lg font-semibold mt-2">Canada’s inflation rate fell to 1.9% in November</h3>
-          <p class="text-gray-600 text-sm mt-2">Why did Chrystia Freeland resign and other questions about Trudeau’s cabinet crisis, answered Why did Chrystia Freeland resign and other questions about</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- Hero Section -->
     <section class="container mx-auto my-6 p-4 bg-white shadow-md max-w-7xl rounded-sm">
@@ -350,13 +356,13 @@
 
     <div class="max-w-7xl mx-auto mt-10">
       <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-bold text-gray-800">Video Gallery</h2>
+        <h2 class="text-2xl font-bold text-gray-800 p-4">Video Gallery</h2>
         <a href="#" class="text-blue-600 hover:underline flex items-center">See All <span class="ml-1">&rarr;</span></a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid">
         <!-- Large Video Cards -->
-        <div class="col-span-1 md:col-span-2">
+        <div class="col-span-1 md:col-span-2 xl:col-span-1">
           <div class="bg-white rounded-sm shadow-md overflow-hidden flex gap-5">
             <!-- lg Video1 -->
             <div class="">
@@ -382,7 +388,7 @@
         </div>
 
         <!-- Small Video Cards -->
-        <div class="space-y-4">
+        <div class="space-y-4 md:col-span-2 mt-5">
           <div class="space-y-4">
             <div class="flex items-start h-28 bg-white rounded-sm shadow-md overflow-hidden">
               <div class="relative w-44 h-28 rounded-sm">
@@ -454,42 +460,42 @@
 
     <div class="max-w-7xl mx-auto my-10">
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-xl font-bold">Top Stories</h2>
+        <h2 class="text-xl font-bold p-4">Top Stories</h2>
         <a href="#" class="text-blue-600 font-semibold">See All →</a>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
         <div class="flex space-x-4 border p-4 rounded-sm bg-white">
-          <img src="Resource/image (3).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <img src="Resource/image (3).png" class="w-24 h-16 object-cover rounded-sm" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
         <div class="flex space-x-4 border p-4 rounded-sm bg-white">
-          <img src="Resource/image 77.png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <img src="Resource/image 77.png" class="w-24 h-16 object-cover rounded-sm" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
         <div class="flex space-x-4 border p-4 rounded-sm bg-white">
-          <img src="Resource/image (4).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <img src="Resource/image (4).png" class="w-24 h-16 object-cover rounded-sm" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
         <div class="flex space-x-4 border p-4 rounded-sm bg-white">
-          <img src="Resource/Rectangle 38 (3).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <img src="Resource/Rectangle 38 (3).png" class="w-24 h-16 object-cover rounded-sm" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
         <div class="flex space-x-4 border p-4 rounded-sm bg-white">
-          <img src="Resource/Rectangle 38 (1).png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <img src="Resource/Rectangle 38 (1).png" class="w-24 h-16 object-cover rounded-sm" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
         </div>
         <div class="flex space-x-4 border p-4 rounded-sm bg-white">
-          <img src="Resource/Rectangle 38.png" class="w-24 h-16 object-cover rounded-md" alt="News Image" />
+          <img src="Resource/Rectangle 38.png" class="w-24 h-16 object-cover rounded-sm" alt="News Image" />
           <div>
             <a href="#" class="font-semibold text-black hover:underline">Canada’s inflation rate fell to 1.9% in <span class="font-bold">November</span></a>
           </div>
@@ -505,71 +511,33 @@
           <h2 class="text-2xl font-bold">Farming & Nature</h2>
           <a href="#" class="text-blue-600 font-semibold flex items-center">See All →</a>
         </div>
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="bg-white p-4 rounded-sm shadow">
-            <div class="relative w-96 h-56 rounded-sm mb-4">
-              <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="relative w-full h-56 rounded-sm mb-4">
+              <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA" allowfullscreen></iframe>
             </div>
-            <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded mt-4">Farming</span>
+            <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Farming</span>
             <a href="#" class="block mt-2 text-lg font-bold hover:underline">The Evolution of Farming: Embracing Technology in Agriculture</a>
           </div>
-          <!-- Sidebar 1 content  -->
           <div class="grid grid-cols-1 gap-4">
-            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
-              <div class="relative w-40 h-24 rounded-sm">
-                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 bg-white p-4 rounded-sm shadow">
+              <div class="relative w-full md:w-40 h-24 rounded-sm">
+                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA" allowfullscreen></iframe>
               </div>
               <div>
                 <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
-                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
-              </div>
-            </div>
-            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
-              <div class="relative w-40 h-24 rounded-sm">
-                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
-              </div>
-              <div>
-                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
-                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
-              </div>
-            </div>
-            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
-              <div class="relative w-40 h-24 rounded-sm">
-                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
-              </div>
-              <div>
-                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
-                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
+                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace</a>
               </div>
             </div>
           </div>
-          <!-- sidebar 2 content  -->
           <div class="grid grid-cols-1 gap-4">
-            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
-              <div class="relative w-40 h-24 rounded-sm">
-                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 bg-white p-4 rounded-sm shadow">
+              <div class="relative w-full md:w-40 h-24 rounded-sm">
+                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA" allowfullscreen></iframe>
               </div>
               <div>
                 <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
-                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
-              </div>
-            </div>
-            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
-              <div class="relative w-40 h-24 rounded-sm">
-                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
-              </div>
-              <div>
-                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
-                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
-              </div>
-            </div>
-            <div class="flex space-x-4 bg-white p-4 rounded-sm shadow">
-              <div class="relative w-40 h-24 rounded-sm">
-                <iframe class="w-full h-full rounded-sm" src="https://www.youtube.com/embed/uG5sLNkDVZA?si=wHxjAMOKWRfrNHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
-              </div>
-              <div>
-                <span class="text-blue-500 text-sm bg-blue-100 px-2 py-1 rounded">Nature</span>
-                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace: How</a>
+                <a href="#" class="block mt-1 font-semibold hover:underline">The Impact of Technology on the Workplace</a>
               </div>
             </div>
           </div>
@@ -582,7 +550,7 @@
     <section>
       <div class="max-w-7xl mx-auto mt-10">
         <div class="flex justify-between items-center mb-4">
-          <h2 class="text-2xl font-bold">Desh gram</h2>
+          <h2 class="text-2xl font-bold p-4">Desh gram</h2>
           <a href="#" class="text-blue-500 hover:underline flex items-center"> See All <span class="ml-1">&rarr;</span> </a>
         </div>
 
@@ -596,19 +564,19 @@
           <!-- Small News Cards -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="bg-white shadow rounded-sm pt-4">
-              <img src="Resource/deshgram/image (1).png" alt="News 1" class="w-full h-40 object-cover rounded-t-lg" />
+              <img src="Resource/deshgram/image (1).png" alt="News 1" class="w-full h-40 object-cover px-3" />
               <a href="#" class="block p-2 text-sm font-bold hover:underline">বিগত সরকারের সময় দেশে অপরিকল্পিত বিনিয়োগ হয়েছে: উপদেষ্টা</a>
             </div>
             <div class="bg-white shadow rounded-sm pt-4">
-              <img src="Resource/deshgram/image (2).png" alt="News 2" class="w-full h-40 object-cover rounded-t-lg" />
+              <img src="Resource/deshgram/image (2).png" alt="News 2" class="w-full h-40 object-cover px-3" />
               <a href="#" class="block p-2 text-sm font-bold hover:underline">২৪ ঘণ্টায় ডেঙ্গুতে মৃত্যু নেই, হাসপাতালে ভর্তি ৬৭ জন</a>
             </div>
             <div class="bg-white shadow rounded-sm pt-4">
-              <img src="Resource/deshgram/image (3).png" alt="News 3" class="w-full h-40 object-cover rounded-t-lg" />
+              <img src="Resource/deshgram/image (3).png" alt="News 3" class="w-full h-40 object-cover px-3" />
               <a href="#" class="block p-2 text-sm font-bold hover:underline">প্রযুক্তির আশির্বাদ বিলুপ্তপ্রায় গরু নিয়ে হালচাষ</a>
             </div>
             <div class="bg-white shadow rounded-sm pt-4">
-              <img src="Resource/deshgram/image (4).png" alt="News 4" class="w-full h-40 object-cover rounded-t-lg" />
+              <img src="Resource/deshgram/image (4).png" alt="News 4" class="w-full h-40 object-cover px-3" />
               <a href="#" class="block p-2 text-sm font-bold hover:underline">বগুড়ায় ক্যাডেট মাদ্রাসার বার্ষিক অভিভাবক সমাবেশ</a>
             </div>
           </div>
@@ -620,7 +588,7 @@
     <section>
       <div class="max-w-7xl mx-auto mt-10">
         <!-- Advertisement Section -->
-        <h2 class="text-2xl font-bold mb-4">Advertisement With Us</h2>
+        <h2 class="text-2xl font-bold mb-4 p-4">Advertisement With Us</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <img src="Resource/AD img/image.png" alt="Ad 1" class="w-full h-full rounded shadow object-cover" />
           <img src="Resource/AD img/image (1).png" alt="Ad 2" class="w-full h-auto rounded shadow" />
@@ -630,7 +598,7 @@
         </div>
 
         <!-- Learn & Explore Section -->
-        <h2 class="text-2xl font-bold mt-8 mb-4">Learn & Explore</h2>
+        <h2 class="text-2xl font-bold mt-8 mb-4 p-4">Learn & Explore</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div class="bg-white p-4 rounded-sm shadow text-center">
             <img src="Resource/ecom img/Group 1.png" alt="Shopify Logo" class="mx-auto h-14 mb-2" />
@@ -663,12 +631,15 @@
 
     <!-- Footer -->
     <footer class="footer p-8 text-sm mt-10">
-      <div class="max-w-7xl mx-auto flex border-b border-gray-600">
-        <div class="px-2 py-2 pl-2"><a href="#" class="block text-gray-50 pr-6 border-r border-gray-600">Terms & Conditions</a></div>
-        <div class="p-2"><a href="#" class="block text-gray-50 pr-6 border-r border-gray-600">Community Guidelines</a></div>
-        <div class="p-2"><a href="#" class="block text-gray-50 pr-6 border-r border-gray-600">Privacy Policy</a></div>
-        <div class="p-2"><a href="#" class="block text-gray-50 pr-6">Disclaimer</a></div>
+      <div class="max-w-7xl mx-auto border-b border-gray-600">
+        <div class="flex flex-wrap justify-center md:justify-start">
+          <div class="px-2 py-2"><a href="#" class="block text-gray-50 px-4 border-r border-gray-600">Terms & Conditions</a></div>
+          <div class="px-2 py-2"><a href="#" class="block text-gray-50 px-4 border-r border-gray-600">Community Guidelines</a></div>
+          <div class="px-2 py-2"><a href="#" class="block text-gray-50 px-4 border-r border-gray-600">Privacy Policy</a></div>
+          <div class="px-2 py-2"><a href="#" class="block text-gray-50 px-4">Disclaimer</a></div>
+        </div>
       </div>
+
       <div class="max-w-7xl mx-auto mt-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
           <!-- Legal Section -->
@@ -709,7 +680,7 @@
         </div>
 
         <!-- Additional Links -->
-        <div class="mt-8 pt-8 border-t border-gray-600 grid grid-cols-2 md:grid-cols-3 gap-4 items-center">
+        <div class="mt-8 pt-8 border-t border-gray-600 grid grid-cols md:grid-cols-3 gap-4 items-center">
           <!-- Download App -->
           <div class="space-y-2 flex items-center gap-2">
             <h3 class="font-semibold text-gray-50 p-3">Download App</h3>
@@ -743,5 +714,10 @@
 
     <script src="script.js"></script>
     <script src="menu.js"></script>
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

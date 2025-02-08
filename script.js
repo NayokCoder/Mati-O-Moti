@@ -21,7 +21,7 @@ function autoSlide() {
   autoSlideInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides; // শেষ হলে আবার প্রথমে যাবে
     changeSlide(currentIndex);
-  }, 5000); // Slide changes every 5 seconds
+  }, 30000); // Slide changes every 5 seconds
 }
 
 // Start auto-slide after text animation completes
@@ -32,6 +32,6 @@ buttons.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     changeSlide(index);
     clearInterval(autoSlideInterval); // Stop auto-slide
-    setTimeout(autoSlide, 5000); // 5 সেকেন্ড পর আবার শুরু হবে
+    setTimeout(autoSlide, 30000); // 5 সেকেন্ড পর আবার শুরু হবে
   });
 });
